@@ -10,4 +10,8 @@ class Tag extends Model
 
 	protected $fillable = ['name'];
 
+	public function articles()
+	{
+		return $this->belongsToMany('App\Article')->withTimestamps();
+	}
 }
