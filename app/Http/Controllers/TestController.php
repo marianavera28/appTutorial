@@ -17,6 +17,8 @@ class TestController extends Controller
 		$article->tags;
 
     	//helper de laravel para mostrar datos
-    	dd($article);
+    	//dd($article);
+
+    	return view('test.view',['article' => $article]);
     }
 }

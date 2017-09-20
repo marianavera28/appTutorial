@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test.view');
 });
 
 //Crear una ruta con variable por get opcional
